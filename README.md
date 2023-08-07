@@ -6,6 +6,10 @@
 ![Frame 2](https://github.com/JoabeFake/ConnectU/assets/128631446/1f9386d4-95f8-4b84-91d5-acf4c9c91045)
 ##### Para acessar o sistema, é necessário fazer o cadastro fornecendo os seus dados pessoais, nome, instituição, celular e Linkedin.
 
+# Procure seus Amigos
+![Frame 3](https://github.com/JoabeFake/ConnectU/assets/128631446/f50fb3d6-0c4a-406c-86f4-52728fa0ae1a)
+##### Depois de fazer o seu login, você será redirecionado para uma página na qual terá que selecionar as pessoas que você conhece e não conhece do evento.
+
 # Grafo 
 ![Frame 4](https://github.com/JoabeFake/ConnectU/assets/141665447/b3f35b71-e295-4cc9-8483-27ad94d835a0)
 ##### Basicamente é um "Gráfico" em que aparece as pessoas que você conhece no evento que você está e também pode ver as pessoas que **não** conhece e talvez queira interagir
@@ -16,3 +20,4 @@
 # Grafo Atualizado
 ![Frame 6](https://github.com/JoabeFake/ConnectU/assets/141665447/3fb4d5d1-01d6-441f-b170-33a88ff930d2)
 ##### Após o Final do evento será possível visualizar o mesmo Grafo anteriormente porém atualizado, agora com as pessoas que você conheceu durante evento
+
