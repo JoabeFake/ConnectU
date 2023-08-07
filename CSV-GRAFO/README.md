@@ -10,7 +10,7 @@ inicialmente, 4 tipos de arquivos são usados no funcionamento desta ferramenta.
 #### O arquivo HTML apresenta a estrutura web do programa, gerando classes, botões containers e inputs.
 (você pode conferir inteiramente o arquivo no local "CSV-GRAFO/dist/index.html".)
 
-
+~~~HTML
     <!DOCTYPE html>
     <html lang="pt-BR" >
     <head>
@@ -44,10 +44,12 @@ inicialmente, 4 tipos de arquivos são usados no funcionamento desta ferramenta.
     
     </body>
     </html>
+~~~
     
 #### O arquivo CSS estiliza a página HTML, você pode estilizar ela como quiser!
 (você pode conferir inteiramente o arquivo no local "CSV-GRAFO/dist/css/style.css".)
 
+~~~CSS
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     body {
       margin: 0;
@@ -289,10 +291,12 @@ inicialmente, 4 tipos de arquivos são usados no funcionamento desta ferramenta.
       color: aqua;
       background-color: black;
     }
+~~~
 
 #### Os arquivos JavaScript transformam a tabela no grafo e apresentam ao HTML.
 (Aqui as coisas complicam um pouco...)
 
+~~~javascript
     var i,
           s,
           o,
@@ -477,3 +481,4 @@ inicialmente, 4 tipos de arquivos são usados no funcionamento desta ferramenta.
 
     document.getElementById('file').addEventListener('change', handleFileSelect, false);
 
+~~~
