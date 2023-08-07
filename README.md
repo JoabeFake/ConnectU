@@ -4,7 +4,7 @@
 
 # Cadastro
 ![Frame 2](https://github.com/JoabeFake/ConnectU/assets/128631446/1f9386d4-95f8-4b84-91d5-acf4c9c91045)
-##### Para acessar o sistema, é necessário fazer o cadastro fornecendo os seus dados pessoais, o seu nome, instituição, celular e Linkedin.
+##### Para acessar o sistema, é necessário fazer o cadastro fornecendo os seus dados pessoais, nome, instituição, celular e Linkedin.
 
 # Grafo 
 ![Frame 4](https://github.com/JoabeFake/ConnectU/assets/141665447/b3f35b71-e295-4cc9-8483-27ad94d835a0)
