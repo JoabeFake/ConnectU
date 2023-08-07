@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <title>GRAFO - CONHECIDOS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="buttons">
+    <button class="nav btn btn-1 btn-sep icon-circular" id="circular">Circular</button>
+    <button class="nav btn btn-2 btn-sep icon-grid" id="grid">Grade</button>
+    <button class="nav btn btn-3 btn-sep icon-start-force" id="start-force">Fluir</button>
+    <button class="nav btn btn-4 btn-sep icon-stop-force" id="stop-force">Parar de Fluir</button>
+    <button class="nav btn btn-5 btn-sep icon-clear" id="clear">Limpar</button>
+  </div>
+  <!-- O grafo fica aqui -->
+  <div id="graph-container"></div> 
+
+  <div>
+    <input type="file" id="file" name="file" />
+  </div>
+
+  <script src='js/jquery.min.js'></script>
+  <script src='js/sigma.min_3.js'></script>
+  <script src='js/dat.gui.min.js'></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
