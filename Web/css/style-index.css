@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+body{
+    background: linear-gradient(134deg, #000 0%, #1E1E1E 100%);
+}
+
+li, a, button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+.eu{
+    padding-right: 2vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 4vh;
+}
+
+.nav__links{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0); 
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+/* IMAGEM */
+
+.LOGO img{
+    max-height: 43vh;
+    width: auto;
+    height: auto;
+
+    margin: auto;
+    display: block;
+
+    margin-top: 20vh;
+}
+
+
+/* BOTÃO */
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn:link,.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .4s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.space{
+
+    padding-top: 100vh;
+}
+
+@media (max-width: 700px){
+    /* IMAGEM */
+    .LOGO img{
+        max-height: 50vh;
+        max-width: 75vw;
+        width: auto;
+        height: auto;
+
+        margin: auto;
+        display: block;
+
+        margin-top: 26vh;
+    }
+
+    li, a, button{
+        font-size: 12px;
+    }
+    .text-box {
+        margin-top: 26vh;
+    }
+    .nav__links li{
+        display: inline-block;
+        padding: 0px 8vw;
+    }
+
+
+}
+@media (min-height: 1024px){
+    .LOGO img{
+        max-height: 43vh;
+        max-width: 90vw;
+    }
+    li, a, button{
+        font-size: 25px;
+    }
+
+}
