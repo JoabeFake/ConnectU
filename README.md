@@ -22,7 +22,4 @@
 ![Frame 6](https://github.com/JoabeFake/ConnectU/assets/141665447/3fb4d5d1-01d6-441f-b170-33a88ff930d2)
 ##### Após o Final do evento será possível visualizar o mesmo Grafo anteriormente porém atualizado, agora com as pessoas que você conheceu durante evento
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/06d09162-fa0a-4e63-8ebd-be61b304a99d/deploy-status)](https://app.netlify.com/sites/connecting-u/deploys)
-
-
-https://well-idesco.github.io/Connect-U/
+[![Netlify Status](https://well-idesco.github.io/Connect-U/)
