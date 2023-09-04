@@ -23,3 +23,6 @@
 ##### Após o Final do evento será possível visualizar o mesmo Grafo anteriormente porém atualizado, agora com as pessoas que você conheceu durante evento
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/06d09162-fa0a-4e63-8ebd-be61b304a99d/deploy-status)](https://app.netlify.com/sites/connecting-u/deploys)
+
+
+https://well-idesco.github.io/Connect-U/
