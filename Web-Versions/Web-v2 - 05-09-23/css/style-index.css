@@ -1,0 +1,78 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+body{
+    height: 100vh;
+}
+header{
+    width: 100vw;
+    position: relative;
+}
+/* .container{
+    position: absolute;
+    bottom: 0;
+    margin: 0px 30%;
+} */
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar li, a{
+    display: inline-flex;
+    padding: 10px;
+}
+.navbar img{
+    width: 35px;
+    height: auto;
+}
+.btn{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #000; 
+}
+.sidenav{
+    position: absolute;
+    margin: 25px 0px;
+    padding: 10px 20px;
+    width: 100px;
+    transition-delay: 0.3s;
+    transition: 0.5s ease-in-out;
+}
+.active .sidenav {
+    transition: 0.5s ease-in-out;
+    height: 93vh;
+    width: 220px;
+    position: fixed;
+    background: linear-gradient(150.46deg,rgba(255, 255, 255, 0.5) -12.61%,rgba(255, 255, 255, 0.25) 110.1%);
+    padding: 10px 0;
+}
+.items {
+    padding: 20px 0;
+    display: none;
+}
+.active .items{
+    display: block;
+}
+.items ul {
+    list-style: none;
+}
+.items ul li {
+    margin: 10px 0;
+    height: 40px;
+    transition: 0.5s ease-in;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.items li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
