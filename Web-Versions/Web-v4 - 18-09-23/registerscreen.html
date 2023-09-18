@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-registerscreen.css">
+    <title>Registre-se</title>
+</head>
+<body>
+    <!-- <div class="main-login">
+        <div class="card-left">
+            <form id="register-box">
+            <h1>Registre-se</h1>
+            <div class="group">
+                <input class="form__input" type="text" name="nome_de_usuario" placeholder="">
+                <label for="name">Nome</label>
+            </div>
+            <div class="group">
+                <input class="form__input" type="text" name="email" placeholder="">
+                <label for="email">E-Mail</label>
+            </div>
+            <div class="group">
+                <input class="form__input" type="text" name="senha" placeholder="">
+                <label for="senha">Senha</label>
+            </div>
+                <div class="btn">
+                    <a href="registerscreen2.html">Continuar</a>
+                </div>
+            </form>
+        </div>
+        <div class="card-right">
+            <img src="img/logoidescogoogle.png">
+        </div>
+    </div> -->
+    <div class="main-login">
+            <form id="regForm" action="php/teste.php" method="post">
+                <h1>Registre-se:</h1>
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">Informações de Contato:
+                    <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                    <p><input placeholder="Telefone..." oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab">Informações Instituicionais:
+                    <p><input placeholder="Linkedin..." oninput="this.className = ''"></p>
+                    <p><input placeholder="Instituição..." oninput="this.className = ''"></p>
+                </div>
+
+                <div class="tab">Informações de Login:
+                    <p><input placeholder="Nome de Usuário..." oninput="this.className = ''"></p>
+                    <p><input placeholder="Senha..." oninput="this.className = ''"></p>
+                </div>
+
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                </div>
+            </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

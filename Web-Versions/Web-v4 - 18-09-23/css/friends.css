@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header{
+    top: 0;
+    width: 100%;
+    height: 75px;
+    transition: 0.2s;
+    z-index: 1;
+    position: fixed;
+    background: #0e0f1a;
+}
+.sidenav{
+    margin-top: 10px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    height: 100vh;
+    width: 0px;
+    z-index: 1;
+}
+.active .sidenav {
+    height: 100vh;
+    width: 105px;
+    padding: 0px 20px;
+    background: #0e0f1a;
+}
+.btn{
+    margin: auto;
+    width: 55px;
+    border-radius: 35px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+.btn img{
+    width: 35px;
+    height: 35px;
+}
+.btn:hover{
+    background-color: #079d5a75;
+}
+.items{
+    padding: 20px 0px;
+    transition: opacity 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.active .items{
+    opacity: 1;
+    visibility: visible;
+}
+.items ul li {
+    margin: 10px 0;
+    transition: 0.5s ease-in;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.items li a {
+    border-radius: 40px;
+    padding: 10px;
+    display: inline-flex;
+}
+.items a:hover{
+    background-color: #065e3675;
+}
+.items img{
+    width: 35px;
+    height: auto;
+} 
+.user-list{
+    width: 100vw;
+    padding: 20px 0px;
+    transition: 0.2s;
+    background: #0e0f1a;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+}
+.user *{
+    user-select: none;
+}
+.user{
+    border-radius: 100px;
+    width: 500px;
+    height: 100px;
+    margin: 10px auto;
+    background: #afafaf70; /*background: 37396d, #575757;*/
+    cursor: pointer;
+    display: flex;
+    box-shadow: #afafaf70 0px 8px 24px;
+    transition: all 0.2s;
+}
+.user-img{
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+.user-img img{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+.user-name{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.user h4{
+    color: #ffffff;
+    pointer-events: none;
+}
+.user h5{
+    margin: auto;
+    align-items: center;
+    display: flex;
+    border:1px solid red
+}
+@media only screen and (max-width: 600px){
+    .user-list{
+        width: 100vw;
+    }
+    .user{
+        width: 90vw;
+    }
+    .user-img{
+        margin-left: 0px;
+    }
+}

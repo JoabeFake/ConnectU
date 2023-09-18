@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-registerscreen.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <form id="regForm" action="index.html" method="post">
+            <h1>Login</h1>
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">Informações de Login:
+                <p><input placeholder="Nome de Usuário..." oninput="this.className = ''"></p>
+                <p><input placeholder="Senha..." oninput="this.className = ''"></p>
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            </div>
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

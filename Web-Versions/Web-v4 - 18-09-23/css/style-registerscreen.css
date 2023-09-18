@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-login{
+    height: 100%;
+    background: linear-gradient(130deg, #0e0f1a 80%, #079d59 125%);
+    display: flex;
+    align-items: center;
+}
+#regForm {
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 30px;
+    padding: 40px;
+    width: 50%;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+  /*Prev and Next Buttons*/
+  #prevBtn, #nextBtn {
+    background: #079d59;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: background 0.3s;
+  }
+  #prevBtn:hover, #nextBtn:hover{
+    background: #00c769;
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    #regForm{
+        width: 80vw;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #regForm{
+        width: 80vw;
+    }    
+}
