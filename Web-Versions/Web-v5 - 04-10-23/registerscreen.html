@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="js/jQuery.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register_login.css">
+    <title>Registre-se</title>
+</head>
+<body>
+    <div class="main-login">
+            <form id="regForm" action="php/teste.php" method="post">
+                <h1>Registre-se:</h1>
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">Informações de Contato:
+                    <p class="input-group"><input name="email" required="" id="email" oninput="this.className = ''">
+                    <label class="inp-label">E-mail</label></p>
+                    <p class="input-group"><input name="telefone" maxlength="19" required="" id="telefone" onkeyup="foneMask(event)" oninput="this.className = ''">
+                    <label class="inp-label">Telefone</label></p>
+                </div>
+                
+                <div class="tab">Informações Instituicionais:
+                    <p class="input-group"><input name="linkedin" required="" id="linkedin" oninput="this.className = ''">
+                    <label class="inp-label">LinkedIn</label></p>
+                    <p class="input-group"><input name="instituicao" required="" oninput="this.className = ''">
+                    <label class="inp-label">Instituição</label></p>
+                </div>
+
+                <div class="tab">Informações de Login:
+                    <p class="input-group"><input name="nome_usuario" required="" oninput="this.className = ''">
+                    <label class="inp-label">Nome de Usuário</label></p>
+                    <p class="input-group"><input name="senha" id="Password" type="password" required="" oninput="this.className = ''">
+                    <label class="inp-label">Senha</label><input id="hidePass" onclick="hide()" type="checkbox">
+                <label id="labelPass" for="hidePass"></label></p>
+                </div>
+
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                </div>
+            </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register_login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <form id="regForm" action="" method="post">
+            <h1>Login:</h1>
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">Informações de Login:
+                <p class="input-group">
+                    <input class="form_input" name="email" id="email" required="" oninput="this.className = ''">
+                    <label class="inp-label">Email</label>
+                </p>
+                <p class="input-group">
+                    <input class="form_input" name="password" id="password" type="password" required="" oninput="this.className = ''">
+                    <label class="inp-label">Senha</label>
+                    <input id="hidePass" onclick="hide()" type="checkbox">
+                    <label id="labelPass" for="hidePass"></label>
+                </p>
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;display: none;">
+            <span class="step"></span>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function validatelogin() {
+            var user=document.forms["regForm"]["nome_de_usuario"].value;
+            var pass=document.forms["regForm"]["password"].value;
+            if(user==null || user=="") {
+                alert("Please enter nome_de_usuario");
+                $('#nome_de_usuario').focus();
+                return false;
+            } else if(pass==null || pass=="") {
+                alert("Please enter password");
+                $('#password').focus();
+                return false;
+            } else if(user!==null || user!=="" || pass!==null || pass!=="") {
+                // These gets the nome_de_usuario and password inputted by the user and is 
+                // expected to be sent to the validate.php file to check whether the 
+                // records is present in the database or not. and receives a response.
+               $.ajax({
+                    url : "php/validate.php",
+                    type : 'POST',
+                    data :  $('#regForm').serialize(),
+                    success : function(msg) {
+                        $('.main-login').html(msg);
+                    }
+                });
+                return false;
+            } else {
+                alert("form submitted");
+            }
+        }
+        </script>
+    <script src="js/register.js"></script>
+</body>
+</html>

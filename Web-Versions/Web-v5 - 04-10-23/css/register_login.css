@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-login{
+    height: 100%;
+    background: linear-gradient(130deg, #0e0f1a 80%, #079d59 125%);
+    display: flex;
+    align-items: center;
+}
+/*card do login*/
+form{
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 30px;
+    padding: 40px;
+    width: 50%;
+}
+.input-group{
+    position: relative;
+}
+/*estilos do input*/
+input{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #aaaaaa;
+    -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+}
+
+/*input invalido*/
+input.invalid{
+    background-color: #ffdddd;
+    -webkit-text-fill-color: #000000;
+    -webkit-box-shadow: 0 0 0px 40rem #ffdddd inset;
+}
+/*label flutuante*/
+.inp-label{
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+input:focus, input:valid{
+    outline: none;
+}
+input:focus ~ label, input:valid ~ label{
+    transform: translateY(-50%) scale(0.8);
+    background: linear-gradient(#ffffff 55%, #fff 0%);
+}
+.invalid:focus ~ label, .invalid:valid ~ label{
+    background: linear-gradient(#ffffff 55%, #ffdddd 0%);
+}
+/*check box*/
+#password{
+    padding-right: 20%;
+}
+#labelPass:before{
+    content: url("../img/hide.png");
+    position: absolute;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    right: -8px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+:checked+#labelPass::before{
+    content: url("../img/view.png");
+}
+input[type=checkbox]{
+    display: none;
+}
+/*esconder tabs*/
+.tab{
+    display: none;
+}
+/*passos do form*/
+.step{
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+/*passo ativo do form*/
+.step.active{
+    opacity: 1;
+}
+/*passo acabado e valido*/
+.step.finish{
+    background-color: #04AA6D;
+}
+/*botao de proximo e anterior*/
+#prevBtn, #nextBtn{
+    background: #079d59;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+#prevBtn:hover, #nextBtn:hover{
+    background: #00c769;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    #regForm{
+      width: 80vw;
+    }
+    #password{
+        padding-right: 25%;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    #regForm{
+        width: 80vw;
+    }
+    #password{
+        padding-right: 10%;
+    }
+}
