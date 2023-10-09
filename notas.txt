@@ -1,3 +1,9 @@
 conteudos relevantes:
 
 https://www.sigmajs.org/#quickstart
+
+https://codesandbox.io/p/sandbox/currying-flower-yz2lvm?file=%2Findex.html%3A4%2C29
+
+https://www.papaparse.com/docs#csv-to-json
+
+sucesso
