@@ -1,0 +1,3 @@
+conteudos relevantes:
+
+https://www.sigmajs.org/#quickstart
