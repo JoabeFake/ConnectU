@@ -6,4 +6,6 @@ https://codesandbox.io/p/sandbox/currying-flower-yz2lvm?file=%2Findex.html%3A4%2
 
 https://www.papaparse.com/docs#csv-to-json
 
+https://github.com/jacomyal/sigma.js/tree/main/demo
+
 sucesso
