@@ -8,4 +8,6 @@ https://www.papaparse.com/docs#csv-to-json
 
 https://github.com/jacomyal/sigma.js/tree/main/demo
 
+https://drive.google.com/drive/folders/18cZ1B9VdUyTxdTpbCiCLy4LDKYYaYOnt?usp=sharing
+
 sucesso
