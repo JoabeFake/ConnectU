@@ -12,4 +12,8 @@ https://drive.google.com/drive/folders/18cZ1B9VdUyTxdTpbCiCLy4LDKYYaYOnt?usp=sha
 
 https://codesandbox.io/s/github/jacomyal/sigma.js/tree/main/examples/layouts
 
+VERSAO MAIS ATUALIZADA (25/10/2023):
+
+https://www.dropbox.com/scl/fi/3qw74en4epy7bda76qmdg/ConnectUSIGMA.zip?rlkey=olr218jy0g14vy94j8rmr1udb&dl=0
+
 sucesso
